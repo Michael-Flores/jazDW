@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.bordes{
+    height: 100px;
+    width: 600px;
+    border: 2px solid #F79646;
+    padding-top: 30px;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.borde{
+    border: 2px solid #F79646;
+}
+.relleno{
+    background-color: #F79646;
+    border: 2px solid #F79646;
+}
+</style>
+<body>
+    <form action="tabla.php" method="post" class="bordes">
+    <div>
+       <label for="">Operacion</label>
+       <select name="operacion" id="" class="borde">
+        <option value="suma">suma</option>
+        <option value="resta">resta</option>
+        <option value="multiplicacion">multiplicacion</option>
+        <option value="division">division</option>
+       </select>
+       <label for="">valor n</label>
+       <input type="number" name="valor" class="borde">
+    </div>
+    <br>
+       <div>
+        <input type="submit" value="Generar" class="relleno">
+       </div>
+    </form>
+</body>
+</html>
